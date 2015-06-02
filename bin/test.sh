@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 if [ "$(uname)" == "Darwin" ]; then
@@ -7,6 +6,5 @@ if [ "$(uname)" == "Darwin" ]; then
 fi
 
 # npm run webpack -- --progress --colors --watch &
-./node_modules/.bin/webpack --progress --colors --watch &
-nvm use iojs-v2.0.1 
-nvm run server.js
+nvm use 0.10 
+./node_modules/.bin/jest
