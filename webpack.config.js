@@ -5,13 +5,13 @@ module.exports = {
     client: './client.jsx'
   },
   output: {
-    path: __dirname + '/public',
+    path: __dirname + '/public/assets',
     filename: 'bundle.js'
   },
   module: {
     loaders: [
     {
-      test: /.jsx?$/,
+      test: [/.jsx?$/, /.js?$/],
       exclude: /(node_modules|bower_components)/,
       loader: 'babel'
     },

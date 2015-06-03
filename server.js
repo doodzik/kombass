@@ -16,7 +16,7 @@ app.use(function *(next){
   console.log('%s %s - %s', this.method, this.url, ms)
 })
 
-app.use(rewrite('/*', '/index.html'));
+app.use(rewrite(/^\/(?!assets).*/, '/index.html'))
 app.use(staticCache(path.join(__dirname, 'public'), { maxAge: maxAge }))
 
 app.listen(port)
