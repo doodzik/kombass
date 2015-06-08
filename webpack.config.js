@@ -2,7 +2,8 @@
 var webpack = require('webpack')
 module.exports = {
   entry: {
-    client: './client.jsx'
+    path: __dirname + '/router',
+    client: './router.jsx'
   },
   output: {
     path: __dirname + '/public/assets',

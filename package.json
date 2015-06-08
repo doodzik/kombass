@@ -22,6 +22,7 @@
     "babel": "^5.4.7",
     "babel-runtime": "^5.4.7",
     "hydraulik": "^0.1.0",
+    "hydraulik-types": "0.0.1",
     "koa": "^0.20.0",
     "koa-rewrite": "^1.1.0",
     "koa-static-cache": "^3.1.1",
