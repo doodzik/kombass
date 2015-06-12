@@ -21,6 +21,7 @@
   "dependencies": {
     "babel": "^5.4.7",
     "babel-runtime": "^5.4.7",
+    "bower": "^1.4.1",
     "hydraulik": "^0.1.0",
     "hydraulik-types": "0.0.1",
     "koa": "^0.20.0",

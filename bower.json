@@ -1,0 +1,6 @@
+{
+  "name": "kombass",
+  "dependencies": {
+    "gss": "~2.0.0"
+  }
+}

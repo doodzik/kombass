@@ -13,7 +13,7 @@ class App extends Component {
   render(){
     return (
       <div>
-        <Nav />
+        <Nav/>
         <RouteHandler {...this.props} />
       </div>
     )
@@ -25,7 +25,7 @@ var routes = (
     <Route name="artists" path="/artists"       handler={Artists} />
     <Route name="artist"  path="/artist/:name"  handler={Artist} />
     <Route name="cuarter" path="/cuarter/:name" handler={Cuarter} />
-    <Route name="author" path="/author/:name"   handler={Author} />
+    <Route name="author"  path="/author/:name"  handler={Author} />
   </Route>
 )
 

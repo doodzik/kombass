@@ -1,17 +1,40 @@
-import React from "react"
-import { Link } from "react-router"
+import React, { Component } from "react"
+import { Link }             from "react-router"
+require('./nav.styl')
 
-var Nav = React.createClass({
+var Cuarter = React.createClass({
+  contextTypes: {
+    router: React.PropTypes.func
+  },
+
+  handleClick: function(event) {
+    event.preventDefault()
+    document.getElementsByTagName('nav')[0].style.opacity = 0;
+    this.context.router.transitionTo('cuarter', {name: this.props.to});
+  },
+
   render: function () {
-    // <li><Link to="artist" params={{name: "123"}}>Artist</Link></li>
-    // <li><Link to="artists">Artists</Link></li>
-    // <li><Link to="author" params={{name: "123"}}>Artist</Link></li>
     return (
-        <ul>
-          <li><Link to="cuarter" params={{name: "123"}}>Cuarter</Link></li>
-        </ul>
+      <li onClick={this.handleClick}>{this.props.to}</li>
     )
   }
 })
 
-export default Nav
+export default class Nav extends Component {
+  render () {
+    return (
+      <nav>
+        <ul>
+          <Cuarter to="Pberg" />
+          <Cuarter to="Fhain" />
+          <Cuarter to="Xberg" />
+          <Cuarter to="Neukölln" />
+          <Cuarter to="Thof" />
+          <Cuarter to="Mitte" />
+          <Cuarter to="Schöneberg" />
+          <Cuarter to="Wedding" />
+        </ul>
+      </nav>
+    )
+  }
+}
