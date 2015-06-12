@@ -27,7 +27,6 @@
     "koa": "^0.20.0",
     "koa-rewrite": "^1.1.0",
     "koa-static-cache": "^3.1.1",
-    "normalize.css": "^3.0.3",
     "object-assign": "^2.0.0",
     "react": "^0.13.3",
     "react-router": "^0.13.3"
