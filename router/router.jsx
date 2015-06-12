@@ -1,5 +1,7 @@
-import React                           from "react"
-import { Route, Router, RouteHandler } from "react-router"
+import React,  { Component }           from "react"
+import Router, { Route, RouteHandler } from "react-router"
+
+//TODO automate adding routes
 
 import Nav     from "./nav/nav.jsx"
 import Cuarter from "./cuarter.jsx"
@@ -16,7 +18,7 @@ class App extends Component {
       </div>
     )
   }
-})
+}
 
 var routes = (
   <Route name="app" path="/" handler={App}>
@@ -28,6 +30,5 @@ var routes = (
 )
 
 Router.run(routes, Router.HistoryLocation, function (Handler, state) {
-  var params = state.params
-  React.render(<Handler {...this.props}/>, document.getElementById('content'))
+  React.render(<Handler {...this.props} {...state.params}/>, document.getElementById('content'))
 })

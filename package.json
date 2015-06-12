@@ -2,7 +2,7 @@
   "name": "kombass",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "",
   "scripts": {
     "test": "./bin/test.sh",
     "start": "./bin/startup.sh",

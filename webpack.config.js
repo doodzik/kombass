@@ -1,10 +1,7 @@
 
 var webpack = require('webpack')
 module.exports = {
-  entry: {
-    path: __dirname + '/router',
-    client: './router.jsx'
-  },
+  entry: __dirname + '/router/router.jsx',
   output: {
     path: __dirname + '/public/assets',
     filename: 'bundle.js'

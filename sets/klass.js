@@ -1,6 +1,8 @@
-import { Klass, ObserverKlass } from 'hydraulik'
-import sets from './sets.json'
+import { Klass } from 'hydraulik'
+import sets from './sets.js'
 
 var klass = new Klass()
+
 sets.forEach(set => klass.push(require(`./${set}`)))
-export default new ObserverKlass(klass).sets
+
+export default klass.sets

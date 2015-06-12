@@ -1,8 +1,8 @@
-import ArticleList    from "../comp/articleList/articleList"
-import { Articles }   from "../sets/klass"
+import ArticleList from "../comp/articleList/articleList.jsx"
+import { artists } from "../sets/klass"
 
-export default Articles.Component(class ArtistsNav{
+export default artists.Component(class ArtistsNav{
   render(){
-    return (<ArticleList articles={this.props.articles} />)
+    return (<ArticleList articles={this.props.artists} />)
   }
 })

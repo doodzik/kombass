@@ -1,8 +1,9 @@
-import ArticleList    from "../articleList/articleList"
-import { Cuarters }   from "../../sets/klass"
+import React          from "react"
+import ArticleList    from "../articleList/articleList.jsx"
+import { cuarters }   from "../../sets/klass"
 
-export default Cuarters.Component(class {
+export default cuarters.Component(class {
   render(){
-    return (<ArticleList articles={this.props.articles} />)
+    return (<ArticleList articles={this.props.cuarters} />)
   }
 })

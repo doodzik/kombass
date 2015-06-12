@@ -5,4 +5,4 @@ export default class ArtistNav extends Component {
   render(){
     return (<Artist artist={this.props.name} />)
   }
-})
+}
