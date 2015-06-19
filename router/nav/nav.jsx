@@ -9,7 +9,8 @@ var Cuarter = React.createClass({
 
   handleClick: function(event) {
     event.preventDefault()
-    document.getElementsByTagName('nav')[0].style.opacity = 0;
+    // document.getElementsByTagName('nav')[0].style.opacity = 0;
+    document.getElementsByTagName('nav')[0].style.display = 'none';
     this.context.router.transitionTo('cuarter', {name: this.props.to});
   },
 

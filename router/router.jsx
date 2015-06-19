@@ -13,7 +13,7 @@ class App extends Component {
   render(){
     return (
       <div>
-        <Nav/>
+        { (!this.props.name) ? <Nav /> : <div></div> }
         <RouteHandler {...this.props} />
       </div>
     )
