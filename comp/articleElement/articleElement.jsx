@@ -9,8 +9,8 @@ export default React.createClass({
   render: function () {
     return (
       <div className="article">
-        <div className="thumb">
-          <img src={this.props.cover} />
+    
+        <div className="thumb" style={{background: `url(${this.props.cover}) center/cover`}} >
         </div>
         <div className="article-artist">
           {this.props.artist}
