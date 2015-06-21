@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "",
+  "engines": {
+    "iojs": "2.0.x"
+  },
   "scripts": {
     "test": "./bin/test.sh",
-    "start": "./bin/startup.sh",
-    "webpack": "webpack"
+    "start": "node server.js ",
+    "postinstall": "./node_modules/.bin/webpack"
   },
   "repository": {
     "type": "git",

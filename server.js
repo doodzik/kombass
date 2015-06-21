@@ -4,9 +4,8 @@ var koa          = require('koa'),
     rewrite      = require('koa-rewrite'),
     staticCache  = require('koa-static-cache')
 
-var isProduction = process.env.NODE_ENV === 'production',
-    port         = isProduction ? 8080 : 3000,
-    maxAge       = isProduction ? 365 * 24 * 60 * 60 : 0
+var port         = process.env.PORT || 3000,
+    maxAge       = 0
 
 // logger
 app.use(function *(next){
