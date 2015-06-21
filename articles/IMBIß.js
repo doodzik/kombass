@@ -4,6 +4,7 @@ export default {
   author: 'tueoh',
   artist: 'Imbiß',
   cuarter: 'Xberg',
+  gardient: 'linear-gradient(90deg, rgba(60,57,43,1) 0%, rgba(60,57,43,0) 100%),linear-gradient(180deg, rgba(154,140,118,1) 0%, rgba(154,140,118,0) 100%),linear-gradient(270deg, rgba(230,221,216,1) 0%, rgba(230,221,216,0) 100%),linear-gradient(0deg, rgba(89,96,73,1) 0%, rgba(89,96,73,0) 100%)',
   cover: url,
   content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra, nunc in scelerisque dignissim, metus enim auctor ligula, ac pharetra est magna facilisis ex. In hac habitasse platea dictumst. Vestibulum commodo lorem justo, non finibus ipsum lacinia id. Fusce fermentum arcu at quam maximus, ac commodo quam maximus. Nunc pretium facilisis nibh vel mollis. Praesent commodo placerat nulla aliquam facilisis. Fusce ut semper nisi.
 

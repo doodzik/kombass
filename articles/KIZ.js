@@ -2,8 +2,9 @@ var url = require('./kiz.jpg')
 
 export default {
   author: 'tueoh',
-  artist: 'K.I.Z.',
+  artist: 'K.I.Z',
   cuarter: 'Xberg',
+  gardient: 'linear-gradient(0deg, rgba(182,184,179,1) 0%, rgba(182,184,179,0) 100%),linear-gradient(270deg, rgba(136,139,129,1) 0%, rgba(136,139,129,0) 100%),linear-gradient(180deg, rgba(68,66,53,1) 0%, rgba(68,66,53,0) 100%),linear-gradient(90deg, rgba(245,245,247,1) 0%, rgba(245,245,247,0) 100%)',
   cover: url,
   content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra, nunc in scelerisque dignissim, metus enim auctor ligula, ac pharetra est magna facilisis ex. In hac habitasse platea dictumst. Vestibulum commodo lorem justo, non finibus ipsum lacinia id. Fusce fermentum arcu at quam maximus, ac commodo quam maximus. Nunc pretium facilisis nibh vel mollis. Praesent commodo placerat nulla aliquam facilisis. Fusce ut semper nisi.
 

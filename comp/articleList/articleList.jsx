@@ -1,6 +1,28 @@
-import React from "react"
+import React, { Component }  from "react"
 import Hammer from "hammerjs"
 import Article from "../articleElement/articleElement.jsx"
+
+class Nav extends Component {
+  render () {
+    return (
+        <ul>
+          <li> hallo world </li>
+        </ul>
+    )
+  }
+}
+
+class NavEnd extends Component {
+  render () {
+    return (
+        <ul>
+          <li> bye world </li>
+        </ul>
+    )
+  }
+}
+
+
 require('./articlesList.styl')
 require('../articleElement/articleElement.styl')
 
@@ -11,7 +33,7 @@ var Slider = function(aC, cC, bC, aT, bT) {
           current   = React.findDOMNode(this.refs.current),
           before    = React.findDOMNode(this.refs.before),
           mc        = new Hammer(myElement)
-      
+
       mc.on("pan", function(ev) {
         var x       = ev.deltaX,
             windowX = ev.target.clientWidth
@@ -19,6 +41,11 @@ var Slider = function(aC, cC, bC, aT, bT) {
           var velocity       = ev.velocityX || 1,
               transitionTime = 400, //* velocity ^ -1
               trigger        = false
+          // if(velocity < 0 && aC !== undefined) {
+
+          // } else if(velocity > 0 && bC !== undefined ) {
+
+          // } else
           if(x > 0 && bC !== undefined ) {
             // sliding current away
             current.style.transition = `${transitionTime}ms ease 0s`
@@ -93,14 +120,15 @@ export default React.createClass({
   render: function(){
     var articles = this.props.articles.map((article, index) => {
       return(
-                <Article 
-                  artist={article.artist} 
-                  content={article.content} 
-                  cover={article.cover} />
+                <Article
+                  artist={article.artist}
+                  content={article.content}
+                  cover={article.cover}
+                  gardient={article.gardient} />
             )
      })
-    articles.unshift(<div className="article-empty">menu</div>)
-    articles.push(<div className="article-empty">no more articles</div>)
+    articles.unshift(<div className="article-empty"><Nav /></div>)
+    articles.push(<div className="article-empty"><NavEnd /></div>)
     var Test = Slider(articles[this.state.index], articles[this.state.index + 1], articles[this.state.index + 2], this.afterTrigger, this.beforeTrigger)
     return <Test />
   }
