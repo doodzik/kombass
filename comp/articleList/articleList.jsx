@@ -11,15 +11,15 @@ var Slider = function(aC, cC, bC, aT, bT) {
           current   = React.findDOMNode(this.refs.current),
           before    = React.findDOMNode(this.refs.before),
           mc        = new Hammer(myElement)
-
+      
       mc.on("pan", function(ev) {
-        let x = ev.deltaX
+        var x       = ev.deltaX,
+            windowX = ev.target.clientWidth
         if(ev.isFinal) {
-          var windowX      = ev.target.clientWidth,
-              velocity     = ev.velocityX || 1,
+          var velocity       = ev.velocityX || 1,
               transitionTime = 400, //* velocity ^ -1
-              trigger     = false
-          if(x > 0) {
+              trigger        = false
+          if(x > 0 && bC !== undefined ) {
             // sliding current away
             current.style.transition = `${transitionTime}ms ease 0s`
             if(x > windowX / 2) {
@@ -32,7 +32,7 @@ var Slider = function(aC, cC, bC, aT, bT) {
               current.style.transition = ''
               trigger && aT()
             }, transitionTime)
-          } else {
+          } else if(aC !== undefined){
             // getting the before thing
             before.style.transition = `${transitionTime}ms ease 0s`
             before.style.boxShadow = '2px 10px 20px 10px #373737'
@@ -48,11 +48,15 @@ var Slider = function(aC, cC, bC, aT, bT) {
               trigger && bT()
             }, transitionTime)
           }
-        } else if(x > 0) {
+        } else if(x > 0 && bC !== undefined) {
           before.style.transform = `translateX(0px)`
+          if(x > windowX)
+            x = windowX
           current.style.transform = `translateX(${x}px)`
-        } else {
+        } else if(aC !== undefined){
           current.style.transform = `translateX(0px)`
+          if(x < (windowX * -1))
+            x = windowX * -1
           before.style.transform = `translateX(${x}px)`
         }
       })
