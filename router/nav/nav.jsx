@@ -16,7 +16,7 @@ var Cuarter = React.createClass({
 
   render: function () {
     return (
-      <li onClick={this.handleClick}>{this.props.to}</li>
+      <div onClick={this.handleClick}>{this.props.to}</div>
     )
   }
 })
@@ -25,15 +25,24 @@ export default class Nav extends Component {
   render () {
     return (
       <nav>
+        <h1>KOMBASS</h1>
         <ul>
-          <Cuarter to="Pberg" />
-          <Cuarter to="Fhain" />
-          <Cuarter to="Xberg" />
-          <Cuarter to="Neukölln" />
-          <Cuarter to="Thof" />
-          <Cuarter to="Mitte" />
-          <Cuarter to="Schöneberg" />
-          <Cuarter to="Wedding" />
+          <li><Cuarter to="Berlin" /></li>
+          <li><Cuarter to="Hamburg" /></li>
+        </ul>
+      </nav>
+    )
+  }
+}
+
+export class NavEnd extends Component {
+  render () {
+    return (
+      <nav>
+        <h1>No more articles</h1>
+        <ul>
+          <li><Cuarter to="Berlin" /></li>
+          <li><Cuarter to="Hamburg" /></li>
         </ul>
       </nav>
     )
