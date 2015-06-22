@@ -11,20 +11,21 @@ export default function(aC, cC, bC, aT, bT) {
           before    = React.findDOMNode(this.refs.before),
           mc        = new Hammer(myElement)
 
-      mc.get('pan').set({ threshold: 25 })
+      var inAngle = function(angle) {
+        return angle > -45 && angle < 45 || angle > -180 && angle < -135 || angle > 135 && angle < 180
+      }
+
+      mc.get('pan').set({ threshold: 15 })
 
       mc.on("pan", function(ev) {
         var x       = ev.deltaX,
-            windowX = ev.target.clientWidth
+            windowX = ev.target.clientWidth,
+            angle   = ev.angle
+
         if(ev.isFinal) {
-          var velocity       = ev.velocityX || 1,
-              transitionTime = 400, //* velocity ^ -1
+          var transitionTime = 400,
               trigger        = false
-          // if(velocity < 0 && aC !== undefined) {
 
-          // } else if(velocity > 0 && bC !== undefined ) {
-
-          // } else
           if(x > 0 && bC !== undefined ) {
             // sliding current away
             current.style.transition = `${transitionTime}ms ease 0s`
@@ -54,12 +55,12 @@ export default function(aC, cC, bC, aT, bT) {
               trigger && bT()
             }, transitionTime)
           }
-        } else if(x > 0 && bC !== undefined) {
+        } else if(x > 0 && bC !== undefined && inAngle(angle)) {
           before.style.transform = `translateX(0px)`
           if(x > windowX)
             x = windowX
           current.style.transform = `translateX(${x}px)`
-        } else if(aC !== undefined){
+        } else if(aC !== undefined && inAngle(angle)){
           current.style.transform = `translateX(0px)`
           if(x < (windowX * -1))
             x = windowX * -1
