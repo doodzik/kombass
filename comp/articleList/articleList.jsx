@@ -1,7 +1,7 @@
 import React, { Component }  from "react"
 import Slider from "../slider/slider.jsx"
 import Article from "../articleElement/articleElement.jsx"
-import Nav, { NavEnd } from "../../router/nav/nav.jsx"
+import Nav, { NavEnd, NavStub } from "../../router/nav/nav.jsx"
 
 require('./articlesList.styl')
 
@@ -32,7 +32,7 @@ export default React.createClass({
                   gardient={article.gardient} />
             )
      })
-    articles.unshift(<div className="article-empty"><Nav /></div>)
+    articles.unshift(<NavStub />)
     articles.push(<div className="article-empty"><NavEnd /></div>)
     var Test = Slider(articles[this.state.index], articles[this.state.index + 1], articles[this.state.index + 2], this.afterTrigger, this.beforeTrigger)
     return <Test />

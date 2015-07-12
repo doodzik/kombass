@@ -1,6 +1,8 @@
 {
   "name": "kombass",
   "dependencies": {
-    "gss": "~2.0.0"
+    "gss": "~2.0.0",
+    "circletype.js": "*",
+    "jquery": "~2.1.4"
   }
 }

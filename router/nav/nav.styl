@@ -1,6 +1,41 @@
 nav
-  h1
-    margin-bottom 50px
-    font-size 11em
-  li
-    font-size 6em
+  position fixed
+  width 100vw
+  height 100vh
+  background rgb(68, 12, 12)
+
+  #kompass
+    position absolute
+    width 100vw
+    bottom -35%
+
+  .cities
+    transform-origin bottom center
+  .city 
+    transform-origin bottom center
+    text-align center
+    font-size 5em
+    /* padding-top 15vh */
+
+  #nord-ost 
+    transform rotate(45deg)
+
+  #ost 
+    transform rotate(90deg)
+
+  #sud-ost 
+    transform rotate(135deg)
+
+  #sud 
+    transform rotate(180deg)
+
+  #sud-west 
+    transform rotate(225deg)
+
+  #west 
+    transform rotate(270deg)
+
+  #nord-west 
+    transform rotate(315deg)
+
+

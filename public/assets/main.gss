@@ -1,1 +1,7 @@
 
+.city[center-x]    == ::window[center-x];
+.city[center-y]    == ::window[bottom];
+
+.cities[center-x]  == ::window[center-x];
+.cities[center-y]  == ::window[bottom];
+

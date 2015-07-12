@@ -1,6 +1,7 @@
 import React,  { Component }           from "react"
 import Router, { Route, RouteHandler } from "react-router"
 
+require('./style.styl')
 //TODO automate adding routes
 
 import Nav     from "./nav/nav.jsx"
