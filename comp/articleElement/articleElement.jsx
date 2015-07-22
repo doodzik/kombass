@@ -16,8 +16,9 @@ var Cover =  React.createClass({
   },
 
   render: function () {
+    // <div className="thumb" style={{background: this.props.gardient, position: 'absolute'}} ></div>
     return (<div>
-      <div className="thumb" style={{background: this.props.gardient, position: 'absolute'}} ></div>
+      <div className="thumb" style={{background: '#000', position: 'absolute'}} ></div>
       <div className="thumb" ref='img' style={{background: `url(/assets${this.props.cover}) center/cover`, opacity: this.state.opacity}} ></div>
     </div>)
   }
