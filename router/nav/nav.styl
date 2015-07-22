@@ -2,22 +2,37 @@ nav
   position fixed
   width 100vw
   height 100vh
-  background rgb(68, 12, 12)
+  background rgb(116, 0, 39)
+  box-shadow inset 0px 0px 10em 10px rgba(0, 0, 0, 0.39)
+  overflow-x hidden
 
   #kompass
     position absolute
-    width 100vw
-    bottom -35%
-
+    width 150vw
+    bottom -27%
+    left -24%
+  #kompass-end
+    margin auto
+    display block
+    position relative
+    top 35vh
+    -webkit-filter drop-shadow( -6px 8px 9px #000 )
+    filter drop-shadow( -6px 8px 9px #000 )
+  .city-name
+    font-size 1.7em
+    margin-top 20%
+    font-weight bold
+    letter-spacing 10px
+    color rgb(255, 255, 255)
+    text-shadow -36px 34px #52001C
   .cities
     transform-origin bottom center
-  .city 
+  .city
     transform-origin bottom center
     text-align center
     font-size 5em
-    /* padding-top 15vh */
 
-  #nord-ost 
+  #nord-ost
     transform rotate(45deg)
 
   #ost 

@@ -9,7 +9,7 @@ export default function(aC, cC, bC, aT, bT) {
       var myElement = React.findDOMNode(this.refs.stackSlider),
           current   = React.findDOMNode(this.refs.current),
           before    = React.findDOMNode(this.refs.before),
-          mc        = new Hammer(myElement)
+          mc        = new Hammer(myElement, { domEvents: true })
 
       var inAngle = function(angle) {
         return angle > -45 && angle < 45 || angle > -180 && angle < -135 || angle > 135 && angle < 180

@@ -8,6 +8,6 @@ sets.forEach(set => klass.push(require(`./${set}`)))
 
 var Article = klass.sets.articles
 
-articles.forEach(article => Article.create(require(`../articles/${article}`)))
+articles.forEach(article => Article.create(require(`../articles/${article}/${article}`)))
 
 export default klass.sets

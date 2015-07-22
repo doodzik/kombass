@@ -3,6 +3,7 @@
   "dependencies": {
     "gss": "~2.0.0",
     "circletype.js": "*",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "slick-carousel": "~1.5.6"
   }
 }

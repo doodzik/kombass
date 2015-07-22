@@ -31,4 +31,5 @@ public/assets/js/bundle.js
 npm-debug.log
 bundle.js
 
+public/assets/img/*
 bower_components

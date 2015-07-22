@@ -17,7 +17,10 @@ var Cuarter = React.createClass({
 
   render: function () {
     return (
-      <div onClick={this.handleClick}>{this.props.to}</div>
+      <div>
+        <div className="city-name" onClick={this.handleClick}>{this.props.to}</div>
+        <div className="city-name" >{this.props.direction}</div>
+      </div>
     )
   }
 })
@@ -73,14 +76,14 @@ export default class Nav extends Component {
     return (
       <nav>
         <div ref="cities" className="cities">
-          <div id="nord" className="city"><Cuarter to="Berlin" /></div>
-          <div id="nord-ost" className="city">NordOst</div>
-          <div id="ost" className="city">Ost</div>
-          <div id="sud-ost" className="city">SudOst</div>
-          <div id="sud" className="city">Sud</div>
-          <div id="sud-west" className="city">SudWest</div>
-          <div id="west" className="city">West</div>
-          <div id="nord-west" className="city">NordWest</div>
+          <div id="nord" className="city"><Cuarter direction="N" to="HAMBURG" /></div>
+          <div id="nord-ost" className="city"><Cuarter direction="NO" to="ROSTOCK" /></div>
+          <div id="ost" className="city"><Cuarter direction="O" to="BERLIN" /></div>
+          <div id="sud-ost" className="city"><Cuarter direction="SO" to="LEIPZIG" /></div>
+          <div id="sud" className="city"><Cuarter direction="S" to="MÜNCHEN" /></div>
+          <div id="sud-west" className="city"><Cuarter direction="SW" to="STUTTGART" /></div>
+          <div id="west" className="city"><Cuarter direction="W" to="KÖLN" /></div>
+          <div id="nord-west" className="city"><Cuarter direction="NW" to="BREMEN" /></div>
         </div>
         <img id="kompass" ref="kompass" src="/assets/kompass.svg" alt=""/>
       </nav>
@@ -92,9 +95,6 @@ export class NavStub extends Component {
   render () {
     return (
       <nav>
-        <div className="city-stub">
-          Kombass
-        </div>
         <img id="kompass" src="/assets/kompass.svg" alt=""/>
       </nav>
     )
@@ -118,11 +118,9 @@ export class NavEnd extends Component {
   render () {
     return (
       <nav>
-        <h1>No more articles</h1>
-        <ul>
-          <li><Cuarter to="Berlin" /></li>
-          <li><Cuarter to="Hamburg" /></li>
-        </ul>
+        <Link to="/">
+          <img id="kompass-end" src="/assets/kompass.svg" alt=""/>
+        </Link>
       </nav>
     )
   }

@@ -1,4 +1,4 @@
-
+var path = require('path')
 var webpack = require('webpack')
 module.exports = {
   entry: __dirname + '/router/router.jsx',
@@ -24,7 +24,7 @@ module.exports = {
     {
       test: /\.(jpe?g|png|gif|svg)$/i,
       loaders: [
-          'file?hash=sha512&digest=hex&name=/assets/[hash].[ext]',
+          'file?hash=sha512&digest=hex&name=/img/[hash].[ext]',
           'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
       ]
     }

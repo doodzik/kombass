@@ -1,18 +1,24 @@
 import React from "react"
+import { Link } from 'react-router'
 require('./articleElement.styl')
 
 var Cover =  React.createClass({
-  render: function () {
-    var image = new Image();
-    image.onload = () => {
-      React.findDOMNode(this.refs.img).style.opacity = 1
-    }
-    image.src = this.props.cover
+  getInitialState: function(){
+    var image = new Image()
+    image.src = `/assets${this.props.cover}`
+    return (image.complete) ? { opacity: 1 } : { opacity: 0 }
+  },
 
-    var opacity = (image.complete) ? 1 : 0;
+  componentDidMount: function(){
+    var image = new Image()
+    image.onload = () => this.setState({opacity: 1})
+    image.src = `/assets${this.props.cover}`
+  },
+
+  render: function () {
     return (<div>
       <div className="thumb" style={{background: this.props.gardient, position: 'absolute'}} ></div>
-      <div className="thumb" ref='img' style={{background: `url(${this.props.cover}) center/cover`, opacity: opacity}} ></div>
+      <div className="thumb" ref='img' style={{background: `url(/assets${this.props.cover}) center/cover`, opacity: this.state.opacity}} ></div>
     </div>)
   }
 })
@@ -23,15 +29,21 @@ export default React.createClass({
   },
 
   render: function () {
+    var Content = this.props.content
     return (
       <div className="article">
         <Cover cover={this.props.cover} gardient={this.props.gardient} />
+        <div className="article-city">
+          <Link to="/">{`K ${this.props.cuarter}`}</Link>
+        </div>
+        <div className="article-genre">
+          {this.props.genre}
+        </div>
         <div className="article-artist">
           {this.props.artist}
-        </div>
-        <div className="article-content">
-          {this.props.content}
-        </div>
+          </div>
+        <img className="article-pfeil" src="/assets/pfeil.svg" />
+        <div className="article-content"><Content /></div>
       </div>
     )
   }

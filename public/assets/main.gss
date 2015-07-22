@@ -1,4 +1,3 @@
-
 .city[center-x]    == ::window[center-x];
 .city[center-y]    == ::window[bottom];
 

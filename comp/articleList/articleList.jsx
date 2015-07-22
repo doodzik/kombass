@@ -29,6 +29,8 @@ export default React.createClass({
                   artist={article.artist}
                   content={article.content}
                   cover={article.cover}
+                  cuarter={article.cuarter}
+                  genre={article.genre}
                   gardient={article.gardient} />
             )
      })
