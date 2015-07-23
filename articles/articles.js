@@ -1,1 +1,1 @@
-export default [ "FINN_MARTIN", "BERGE", "MAREENA", "HELENA_HAUFF", "LUMO", "JAY_LUXE" ]
+export default [ "FINN_MARTIN", "BERGE", "MAREENA", "LUMO", "JAY_LUXE", "HELENA_HAUFF" ]
