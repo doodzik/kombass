@@ -72,8 +72,8 @@ var PlayerSlider = React.createClass({
     return (
       <div ref="sliderOuter" className="img-slider">
         <div ref="slider">
-          <div className="teaser segment" style={{background: `url(/assets${sound1}) 50% 50% / cover`}}></div>
-          <div className="teaser segment" style={{background: `url(/assets${sound2}) 50% 50% / cover`}}></div>
+          <div className="teaser segment" style={{background: `url(/assets${sound1}) 50% 50% / cover`}}><div className="bla0">sound</div><div className="bla1">HELENA HAUFF</div><div className="bla2">SHATTER CONE - LXRC21</div></div>
+          <div className="teaser segment" style={{background: `url(/assets${sound2}) 50% 50% / cover`}}><div className="bla0">sound</div><div className="bla1">HELENA HAUFF</div><div className="bla2">CF001 - V/A - PARRISH/SMITH</div></div>
         </div>
       </div>
     );
