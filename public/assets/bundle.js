@@ -29073,8 +29073,44 @@
 	      _react2['default'].createElement(
 	        'div',
 	        { ref: 'slider' },
-	        _react2['default'].createElement('div', { className: 'teaser segment', style: { background: 'url(/assets' + _imgsSound_01Jpg2['default'] + ') 50% 50% / cover' } }),
-	        _react2['default'].createElement('div', { className: 'teaser segment', style: { background: 'url(/assets' + _imgsSound_02Jpg2['default'] + ') 50% 50% / cover' } })
+	        _react2['default'].createElement(
+	          'div',
+	          { className: 'teaser segment', style: { background: 'url(/assets' + _imgsSound_01Jpg2['default'] + ') 50% 50% / cover' } },
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'bla0' },
+	            'sound'
+	          ),
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'bla1' },
+	            'HELENA HAUFF'
+	          ),
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'bla2' },
+	            'SHATTER CONE - LXRC21'
+	          )
+	        ),
+	        _react2['default'].createElement(
+	          'div',
+	          { className: 'teaser segment', style: { background: 'url(/assets' + _imgsSound_02Jpg2['default'] + ') 50% 50% / cover' } },
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'bla0' },
+	            'sound'
+	          ),
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'bla1' },
+	            'HELENA HAUFF'
+	          ),
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'bla2' },
+	            'CF001 - V/A - PARRISH/SMITH'
+	          )
+	        )
 	      )
 	    );
 	  }
@@ -29197,7 +29233,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(201)();
-	exports.push([module.id, ".segment {\n  height: 100vh;\n}\n.text {\n  color: #fff;\n  font-size: 2.2em;\n  padding: 20px;\n  line-height: 62px;\n  font-weight: lighter;\n  color: #fff;\n}\n.teaser {\n  font-size: 8em;\n  word-break: break-word;\n  color: #fff;\n}\n.teaser-header {\n  font-size: 0.6em;\n  padding-top: 80px;\n  color: #fff;\n  text-align: center;\n}\n.teaser-header::first-letter {\n  color: #f00;\n  font-family: futura;\n  font-weight: bold;\n}\n.teaser-content {\n  padding-top: 5%;\n  line-height: 122%;\n  font-weight: bold;\n  padding-left: 2%;\n}\n.article-quote {\n  font-size: 8em;\n  display: inline-block;\n  color: #fff;\n  font-weight: bold;\n  font-style: italic;\n  box-shadow: inset 0px -62px 0px #019883;\n  padding-bottom: 0%;\n  line-height: 130%;\n  letter-spacing: 3px;\n  word-spacing: -3px;\n}\n.img-slider {\n  height: 100vh;\n}\n.img-slider .slick-next {\n  right: 0;\n}\n.img-slider .slick-dots {\n  bottom: 45px;\n}\n.img-slider .slick-dots li button {\n  font-size: 5em;\n}\n.img-slider .slick-dots li button::before {\n  font-size: 0.5em;\n  color: #fff;\n}\n.img-slider .slick-dots li.slick-active button::before {\n  color: #fff;\n}\n.img-unterschrift {\n  font-size: 2.5em;\n  color: #fff;\n  bottom: -80%;\n  position: relative;\n}\n.img-unterschrift .img-desc {\n  font-weight: normal;\n  display: inline-block;\n  color: #fff;\n  font-style: italic;\n  box-shadow: inset 0px -62px 0px #019883;\n  padding-bottom: 0%;\n  line-height: 130%;\n  letter-spacing: 3px;\n  word-spacing: -3px;\n}\n", ""]);
+	exports.push([module.id, ".segment {\n  height: 100vh;\n}\n.text {\n  color: #fff;\n  font-size: 2.2em;\n  padding: 20px;\n  line-height: 62px;\n  font-weight: lighter;\n  color: #fff;\n}\n.teaser {\n  font-size: 8em;\n  word-break: break-word;\n  color: #fff;\n}\n.teaser-header {\n  font-size: 0.6em;\n  padding-top: 80px;\n  color: #fff;\n  text-align: center;\n}\n.teaser-header::first-letter {\n  color: #f00;\n  font-family: futura;\n  font-weight: bold;\n}\n.teaser-content {\n  padding-top: 5%;\n  line-height: 122%;\n  font-weight: bold;\n  padding-left: 2%;\n}\n.article-quote {\n  font-size: 8em;\n  display: inline-block;\n  color: #fff;\n  font-weight: bold;\n  font-style: italic;\n  box-shadow: inset 0px -62px 0px #019883;\n  padding-bottom: 0%;\n  line-height: 130%;\n  letter-spacing: 3px;\n  word-spacing: -3px;\n}\n.img-slider {\n  height: 100vh;\n}\n.img-slider .slick-next {\n  right: 0;\n}\n.img-slider .slick-dots {\n  bottom: 45px;\n}\n.img-slider .slick-dots li button {\n  font-size: 5em;\n}\n.img-slider .slick-dots li button::before {\n  font-size: 0.5em;\n  color: #fff;\n}\n.img-slider .slick-dots li.slick-active button::before {\n  color: #fff;\n}\n.bla0 {\n  margin: 40;\n  float: right;\n  font-size: 0.3em;\n}\n.bla2 {\n  font-size: 0.4em;\n  margin-left: 25px;\n}\n.bla1 {\n  margin-top: 110px;\n  margin-left: 25px;\n  font-size: 0.4em;\n  color: #82002c;\n}\n.img-unterschrift {\n  font-size: 2.5em;\n  color: #fff;\n  bottom: -80%;\n  position: relative;\n}\n.img-unterschrift .img-desc {\n  font-weight: normal;\n  display: inline-block;\n  color: #fff;\n  font-style: italic;\n  box-shadow: inset 0px -62px 0px #019883;\n  padding-bottom: 0%;\n  line-height: 130%;\n  letter-spacing: 3px;\n  word-spacing: -3px;\n}\n", ""]);
 
 /***/ },
 /* 253 */
