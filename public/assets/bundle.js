@@ -26352,8 +26352,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./nav.styl", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./nav.styl");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/stylus-loader/index.js!./nav.styl", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/stylus-loader/index.js!./nav.styl");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -26367,7 +26367,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(201)();
-	exports.push([module.id, "#kompass-end {\n  margin: auto;\n  display: block;\n  position: relative;\n  top: 35vh;\n  -webkit-filter: drop-shadow(-6px 8px 9px #000);\n  filter: drop-shadow(-6px 8px 9px #000);\n}\nnav {\n  position: fixed;\n  width: 100vw;\n  height: 100vh;\n  background: #740027;\n  box-shadow: inset 0px 0px 10em 10px rgba(0,0,0,0.39);\n  overflow-x: hidden;\n  overflow-x: hidden;\n  overflow-y: hidden;\n}\nnav #kompass {\n  position: absolute;\n  width: 150vw;\n  bottom: -27%;\n  left: -24%;\n}\nnav .city-name {\n  font-size: 1.7em;\n  margin-top: 20%;\n  font-weight: bold;\n  letter-spacing: 10px;\n  color: #fff;\n  text-shadow: -36px 34px #52001c;\n}\nnav .cities {\n  transform-origin: bottom center;\n}\nnav .city {\n  transform-origin: bottom center;\n  text-align: center;\n  font-size: 5em;\n}\nnav #nord-ost {\n  transform: rotate(45deg);\n}\nnav #ost {\n  transform: rotate(90deg);\n}\nnav #sud-ost {\n  transform: rotate(135deg);\n}\nnav #sud {\n  transform: rotate(180deg);\n}\nnav #sud-west {\n  transform: rotate(225deg);\n}\nnav #west {\n  transform: rotate(270deg);\n}\nnav #nord-west {\n  transform: rotate(315deg);\n}\n", ""]);
+	exports.push([module.id, "#kompass-end {\n  margin: auto;\n  display: block;\n  position: relative;\n  top: 35vh;\n  -webkit-filter: drop-shadow(-6px 8px 9px #000);\n  filter: drop-shadow(-6px 8px 9px #000);\n}\nnav {\n  position: fixed;\n  width: 100vw;\n  height: 100vh;\n  background: #740027;\n  box-shadow: inset 0px 0px 10em 10px rgba(0,0,0,0.39);\n  overflow-x: hidden;\n  overflow-x: hidden;\n  overflow-y: hidden;\n}\nnav #kompass {\n  position: absolute;\n  width: 150vw;\n  bottom: -27%;\n  left: -24%;\n}\nnav .city-name {\n  font-size: 1.7em;\n  margin-top: 20%;\n  font-weight: bold;\n  letter-spacing: 10px;\n  color: #fff;\n  text-shadow: -36px 34px #52001c;\n}\nnav .cities {\n  -webkit-transform-origin: bottom center;\n      -ms-transform-origin: bottom center;\n          transform-origin: bottom center;\n}\nnav .city {\n  -webkit-transform-origin: bottom center;\n      -ms-transform-origin: bottom center;\n          transform-origin: bottom center;\n  text-align: center;\n  font-size: 5em;\n}\nnav #nord-ost {\n  -webkit-transform: rotate(45deg);\n      -ms-transform: rotate(45deg);\n          transform: rotate(45deg);\n}\nnav #ost {\n  -webkit-transform: rotate(90deg);\n      -ms-transform: rotate(90deg);\n          transform: rotate(90deg);\n}\nnav #sud-ost {\n  -webkit-transform: rotate(135deg);\n      -ms-transform: rotate(135deg);\n          transform: rotate(135deg);\n}\nnav #sud {\n  -webkit-transform: rotate(180deg);\n      -ms-transform: rotate(180deg);\n          transform: rotate(180deg);\n}\nnav #sud-west {\n  -webkit-transform: rotate(225deg);\n      -ms-transform: rotate(225deg);\n          transform: rotate(225deg);\n}\nnav #west {\n  -webkit-transform: rotate(270deg);\n      -ms-transform: rotate(270deg);\n          transform: rotate(270deg);\n}\nnav #nord-west {\n  -webkit-transform: rotate(315deg);\n      -ms-transform: rotate(315deg);\n          transform: rotate(315deg);\n}\n", ""]);
 
 /***/ },
 /* 201 */
@@ -26902,8 +26902,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./slider.styl", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./slider.styl");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/stylus-loader/index.js!./slider.styl", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/stylus-loader/index.js!./slider.styl");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -27028,8 +27028,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./articleElement.styl", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./articleElement.styl");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/stylus-loader/index.js!./articleElement.styl", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/stylus-loader/index.js!./articleElement.styl");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -27043,7 +27043,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(201)();
-	exports.push([module.id, ".article {\n  background-color: #fff;\n}\n.article .article-content {\n  background: #740027;\n  box-shadow: inset 0px 0px 10em 10px rgba(0,0,0,0.39);\n}\n.article .thumb {\n  transition: opacity 1s ease-in-out;\n  position: relative;\n  width: 100%;\n  height: 100vh;\n}\n.article .article-artist {\n  left: 0;\n  right: 0;\n  margin-left: auto;\n  margin-right: auto;\n  top: 71vh;\n  width: 95%;\n  font-size: 7em;\n  font-weight: bold;\n  color: #fff;\n  text-align: center;\n  position: absolute;\n  letter-spacing: 3px;\n}\n.article .article-genre {\n  left: 0;\n  right: 0;\n  margin-left: auto;\n  margin-right: auto;\n  top: 79vh;\n  width: 95%;\n  font-size: 5em;\n  color: #c00000;\n  text-align: center;\n  font-weight: lighter;\n  position: absolute;\n}\n.article .article-pfeil {\n  left: 0;\n  right: 0;\n  margin-left: auto;\n  margin-right: auto;\n  bottom: 5vh;\n  height: 51px;\n  position: absolute;\n}\n.article .article-city {\n  left: 0;\n  right: 0;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 80px;\n  top: 0;\n  width: 90%;\n  font-size: 5em;\n  color: #fff;\n  text-align: center;\n  position: absolute;\n}\n.article .article-city a {\n  text-decoration: none;\n  color: #fff;\n}\n.article .article-city::first-letter {\n  color: #f00;\n  font-family: futura;\n  font-weight: bold;\n}\n.article-empty {\n  background-color: #000;\n  color: #fff;\n  width: 100vw;\n  height: 100vh;\n}\n", ""]);
+	exports.push([module.id, ".article {\n  background-color: #fff;\n}\n.article .article-content {\n  background: #740027;\n  box-shadow: inset 0px 0px 10em 10px rgba(0,0,0,0.39);\n}\n.article .thumb {\n  -webkit-transition: opacity 1s ease-in-out;\n          transition: opacity 1s ease-in-out;\n  position: relative;\n  width: 100%;\n  height: 100vh;\n}\n.article .article-artist {\n  left: 0;\n  right: 0;\n  margin-left: auto;\n  margin-right: auto;\n  top: 71vh;\n  width: 95%;\n  font-size: 7em;\n  font-weight: bold;\n  color: #fff;\n  text-align: center;\n  position: absolute;\n  letter-spacing: 3px;\n}\n.article .article-genre {\n  left: 0;\n  right: 0;\n  margin-left: auto;\n  margin-right: auto;\n  top: 79vh;\n  width: 95%;\n  font-size: 5em;\n  color: #c00000;\n  text-align: center;\n  font-weight: lighter;\n  position: absolute;\n}\n.article .article-pfeil {\n  left: 0;\n  right: 0;\n  margin-left: auto;\n  margin-right: auto;\n  bottom: 5vh;\n  height: 51px;\n  position: absolute;\n}\n.article .article-city {\n  left: 0;\n  right: 0;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 80px;\n  top: 0;\n  width: 90%;\n  font-size: 5em;\n  color: #fff;\n  text-align: center;\n  position: absolute;\n}\n.article .article-city a {\n  text-decoration: none;\n  color: #fff;\n}\n.article .article-city::first-letter {\n  color: #f00;\n  font-family: futura;\n  font-weight: bold;\n}\n.article-empty {\n  background-color: #000;\n  color: #fff;\n  width: 100vw;\n  height: 100vh;\n}\n", ""]);
 
 /***/ },
 /* 211 */
@@ -27061,8 +27061,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./articlesList.styl", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./articlesList.styl");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/stylus-loader/index.js!./articlesList.styl", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/stylus-loader/index.js!./articlesList.styl");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -29182,8 +29182,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./style.styl", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./style.styl");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/stylus-loader/index.js!./style.styl", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/stylus-loader/index.js!./style.styl");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -29535,8 +29535,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./style.styl", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./style.styl");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/autoprefixer-loader/index.js!./../node_modules/stylus-loader/index.js!./style.styl", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/autoprefixer-loader/index.js!./../node_modules/stylus-loader/index.js!./style.styl");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
