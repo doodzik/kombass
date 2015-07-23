@@ -15,11 +15,11 @@ module.exports = {
     },
     {
       test: /.styl$/,
-      loader: 'style-loader!css-loader!stylus-loader'
+      loader: 'style-loader!css-loader!autoprefixer-loader!stylus-loader'
     },
     {
       test: /.css$/,
-      loader: 'css-loader!stylus-loader'
+      loader: 'css-loader!autoprefixer-loader!stylus-loader'
     },
     {
       test: /\.(jpe?g|png|gif|svg)$/i,
