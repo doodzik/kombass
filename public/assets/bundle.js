@@ -29550,7 +29550,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(201)();
-	exports.push([module.id, "body {\n  cursor: pointer;\n  font-family: 'Ubuntu', sans-serif;\n}\n", ""]);
+	exports.push([module.id, "body {\n  font-family: 'Ubuntu', sans-serif;\n}\n", ""]);
 
 /***/ }
 /******/ ]);
