@@ -44,7 +44,7 @@ export default class Nav extends Component {
       mc.get('pan').set({ threshold: 0 })
 
       mc.on("pan", function(ev) {
-        var x       = ev.deltaX % 360,
+            var x       = ev.deltaX % 360,
             windowX = ev.target.clientWidth
 
         if(ev.isFinal) {
